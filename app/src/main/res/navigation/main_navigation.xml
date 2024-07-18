@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/fragment_home">
+
+    <fragment
+        android:id="@+id/fragment_home"
+        android:name="com.example.hoangquocanh.home.HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/home_to_library"
+            app:destination="@+id/fragment_library"
+            app:popUpTo="@id/fragment_home"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/home_to_playlist"
+            app:destination="@+id/fragment_playlist"
+            app:popUpTo="@id/fragment_home"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/home_to_profile"
+            app:destination="@+id/fragment_profile"
+            app:popUpTo="@id/fragment_home"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/reset_home_fragment"
+            app:destination="@+id/fragment_home"
+            app:popUpTo="@id/fragment_home"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/home_to_top_albums"
+            app:destination="@+id/fragment_top_albums" />
+        <action
+            android:id="@+id/home_to_top_tracks"
+            app:destination="@+id/fragment_top_tracks" />
+        <action
+            android:id="@+id/home_to_top_artist"
+            app:destination="@+id/fragment_top_artist" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_top_albums"
+        android:name="com.example.hoangquocanh.home.item.FragmentTopAlbums"
+        tools:layout="@layout/item_detail"/>
+    <fragment
+        android:id="@+id/fragment_top_tracks"
+        android:name="com.example.hoangquocanh.home.item.FragmentTopTracks"
+        tools:layout="@layout/item_detail"/>
+    <fragment
+        android:id="@+id/fragment_top_artist"
+        android:name="com.example.hoangquocanh.home.item.FragmentTopArtist"
+        tools:layout="@layout/item_detail"/>
+    <fragment
+        android:id="@+id/fragment_library"
+        android:name="com.example.hoangquocanh.library.LibraryFragment"
+        tools:layout="@layout/fragment_library">
+        <action
+            android:id="@+id/library_to_home"
+            app:destination="@+id/fragment_home"
+            app:popUpTo="@id/fragment_library"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/library_to_playlist"
+            app:destination="@+id/fragment_playlist"
+            app:popUpTo="@id/fragment_library"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/library_to_playing"
+            app:destination="@+id/fragment_playing" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_playlist"
+        android:name="com.example.hoangquocanh.playlist.PlaylistFragment"
+        tools:layout="@layout/fragment_playlist">
+        <action
+            android:id="@+id/playlist_to_library"
+            app:destination="@+id/fragment_library"
+            app:popUpTo="@id/fragment_playlist"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/playlist_to_home"
+            app:destination="@+id/fragment_home"
+            app:popUpTo="@id/fragment_playlist"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/playlist_to_detail_playlist"
+            app:destination="@+id/fragment_detail_playlist"
+            app:popUpTo="@id/fragment_playlist"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_detail_playlist"
+        android:name="com.example.hoangquocanh.playlist.DetailPlaylistFragment"
+        tools:layout="@layout/fragment_detail_playlist">
+        <action
+            android:id="@+id/detail_playlist_to_playlist"
+            app:destination="@+id/fragment_playlist"
+            app:popUpTo="@id/fragment_detail_playlist"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/detail_playlist_to_sorting_playlist"
+            app:destination="@+id/fragment_sorting_playlist" />
+        <action
+            android:id="@+id/reset_detail_playlist_fragment"
+            app:destination="@+id/fragment_detail_playlist"
+            app:popUpTo="@id/fragment_detail_playlist"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/detail_playlist_to_playing"
+            app:destination="@+id/fragment_playing" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_sorting_playlist"
+        android:name="com.example.hoangquocanh.playlist.SortingPlaylistFragment"
+        tools:layout="@layout/fragment_sorting_playlist">
+        <action
+            android:id="@+id/sorting_to_detail_playlist_fragment"
+            app:destination="@+id/fragment_detail_playlist"
+            app:popUpTo="@id/fragment_sorting_playlist"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_playing"
+        android:name="com.example.hoangquocanh.song.PlayingFragment"
+        tools:layout="@layout/fragment_playing">
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_profile"
+        android:name="com.example.hoangquocanh.profile.ProfileFragment"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/profile_to_home"
+            app:destination="@+id/fragment_home"
+            app:popUpTo="@id/fragment_profile"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

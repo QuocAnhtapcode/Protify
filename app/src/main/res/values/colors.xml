@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="login_background_color">#FFFFFF</color>
+    <color name="login_text_color">#000000</color>
+    <color name="login_edit_text_background_color">#DBE7E8</color>
+    <color name="login_edit_text_hint_color">#4A4E4E</color>
+    <color name="login_edit_text_color">#000000</color>
+    <color name="sign_in_button_color">#08A0B5</color>
+    <color name="sign_in_button_text_color">#FFFFFF</color>
+
+    <color name="register_background_color">#FFFFFF</color>
+    <color name="register_text_color">#000000</color>
+    <color name="register_edit_text_background_color">#DBE7E8</color>
+    <color name="register_edit_text_hint_color">#4A4E4E</color>
+    <color name="register_edit_text_color">#000000</color>
+    <color name="sign_up_button_color">#08A0B5</color>
+    <color name="sign_up_button_text_color">#FFFFFF</color>
+
+    <color name="now_playing_text">#FFFFFF</color>
+    
+    <color name="library_chosen_list_button_color">#00C2CB</color>
+    <color name="library_unchosen_list_button_color">#1E1E1E</color>
+
+    <color name="menu_item_background_color">#292929</color>
+    <color name="line_color">#52525280</color>
+
+    <color name="album_item_background_color">#43636933</color>
+</resources>
